@@ -1,10 +1,10 @@
-Reef Place — финальная сборка Mini App.
+Reef Place — полнофункциональная сборка Mini App.
 
 1. Распакуй архив.
-2. Замени содержимое папки проекта в GitHub.
-3. В терминале (в той же папке):
+2. Замени содержимое проекта GitHub.
+3. В терминале (в папке проекта):
    git add .
-   git commit -m "update UI"
+   git commit -m "release"
    git push
 
-Render автоматически обновит Mini App.
+Render обновит Mini App автоматически. В Telegram откроется интерфейс магазина.
