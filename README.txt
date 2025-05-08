@@ -1,27 +1,10 @@
-ИНСТРУКЦИЯ: ЗАПУСК REEF PLACE НА HEROKU
+Reef Place — финальная сборка Mini App.
 
-1. Установи Node.js и Heroku CLI:
-   - https://nodejs.org/
-   - https://devcenter.heroku.com/articles/heroku-cli
-
-2. В терминале:
-   cd ПАПКА_С_РАЗАРХИВИРОВАННЫМ_ПРОЕКТОМ
-   npm install
-
-3. Создай приложение:
-   heroku login
-   heroku create
-
-4. Задеплой проект:
-   git init
+1. Распакуй архив.
+2. Замени содержимое папки проекта в GitHub.
+3. В терминале (в той же папке):
    git add .
-   git commit -m "init"
-   git push heroku master
+   git commit -m "update UI"
+   git push
 
-5. Запусти:
-   heroku open
-
-6. В BotFather укажи ссылку на приложение:
-   https://YOUR_HEROKU_APP.herokuapp.com
-
-7. Готово!
+Render автоматически обновит Mini App.
