@@ -2,15 +2,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reef Place</title>
   <style>
     body {margin:0;font-family:sans-serif;background:#111;color:#fff;}
-    header {background:#1e1e1e;padding:10px;text-align:center;font-size:20px;font-weight:bold;}
-    .filters {padding:10px;background:#181818;display:flex;flex-wrap:wrap;gap:10px;}
+    header {
+      background:#1e1e1e;padding:10px;text-align:center;
+      font-size:18px;font-weight:800;color:#aaf;
+    }
+    .categories {
+      display:flex;justify-content:center;gap:10px;padding:10px;
+      background:#141414;
+    }
+    .categories button {
+      background:#282828;border:none;padding:8px 12px;border-radius:6px;
+      color:#fff;font-weight:bold;cursor:pointer;
+    }
+    .categories button.active {
+      background:#448;border:1px solid #66f;
+    }
+    .filters {
+      padding:10px;display:flex;flex-wrap:wrap;gap:10px;
+      background:#181818;justify-content:center;
+    }
     .filters select, .filters input {
-      background:#222;color:#fff;border:1px solid #333;padding:5px;
+      background:#222;color:#fff;border:1px solid #333;
+      padding:6px;border-radius:4px;min-width:130px;
     }
     .gallery {display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
               gap:10px;padding:10px;}
@@ -25,13 +43,17 @@
 </head>
 <body>
   <header>Reef Place</header>
+  <div class="categories">
+    <button class="active">Живые организмы</button>
+    <button>Оборудование</button>
+    <button>Расходники</button>
+  </div>
   <div class="filters">
-    <select><option>Живые организмы</option><option>Оборудование</option><option>Расходники</option></select>
-    <select><option>Все подкатегории</option><option>Рыбы</option><option>Кораллы</option><option>Беспозвоночные</option></select>
+    <select><option>Подкатегория</option><option>Рыбы</option><option>Кораллы</option><option>Беспозвоночные</option></select>
     <input type="text" placeholder="Поиск по названию"/>
-    <select><option>Все города</option><option>Москва</option><option>Санкт-Петербург</option></select>
-    <select><option>Все доставки</option><option>Отправка</option><option>Самовывоз</option></select>
-    <select><option>Сортировать</option><option>Цена ↑</option><option>Цена ↓</option></select>
+    <select><option>Город</option><option>Москва</option><option>СПб</option></select>
+    <select><option>Доставка</option><option>Отправка</option><option>Самовывоз</option></select>
+    <select><option>Сортировка</option><option>Цена ↑</option><option>Цена ↓</option></select>
   </div>
   <div class="gallery">
     <div class="card"><img src="https://via.placeholder.com/160x100/228" />
