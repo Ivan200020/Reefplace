@@ -1,10 +1,10 @@
-Reef Place — реальный интерфейс Mini App.
+Reef Place + библиотека категорий.
 
 1. Распакуй архив.
-2. Замени содержимое проекта GitHub.
-3. В терминале (в папке проекта):
+2. Замени файлы в проекте GitHub.
+3. В терминале:
    git add .
-   git commit -m "real UI"
+   git commit -m "library update"
    git push
 
-Render обновит Mini App. В Telegram появится настоящий магазин.
+Render обновит Mini App. В Telegram появится интерфейс с фильтрами и библиотекой.
