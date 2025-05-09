@@ -1,6 +1,6 @@
 
 {
-  "name": "reefplace-header",
+  "name": "reefplace-final",
   "version": "1.0.0",
   "main": "server/server.js",
   "scripts": {
